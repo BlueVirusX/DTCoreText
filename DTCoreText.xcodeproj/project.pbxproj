@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -40,6 +40,11 @@
 		426693AE1B56F98500F9DBFC /* CTLineUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266937D1B56F60D00F9DBFC /* CTLineUtils.m */; };
 		5AF0E509CE9C6EC97E3007F5 /* AutoLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0E4DB1FBCBA1C165C0959 /* AutoLayoutDemoViewController.m */; };
 		5AF0ECFF9BD94137DE0992BA /* AutoLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF0E4D86A6BE8FC798F9702 /* AutoLayoutDemoViewController.xib */; };
+		62CDE7652A3750BD003480D0 /* DTFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */; };
+		62CDE7682A3750E4003480D0 /* DTFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */; };
+		62CDE7692A3750E4003480D0 /* DTFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62F5DF262A4379B60006CBEC /* DTFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */; };
+		62F5DF292A4379BD0006CBEC /* DTFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */; };
 		944A9E6418B5A7F000E41481 /* DTCSSListStyleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A9E6318B5A7F000E41481 /* DTCSSListStyleTest.m */; };
 		94D24B0D1D4AFE7800C7F33C /* CTLineUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266937D1B56F60D00F9DBFC /* CTLineUtils.m */; };
 		94D24B0E1D4AFE7800C7F33C /* NSAttributedStringRunDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = A788C93F14863E8700E1AFD9 /* NSAttributedStringRunDelegates.m */; };
@@ -548,13 +553,6 @@
 			remoteGlobalIDString = FAC284E619B84B5F0010C385;
 			remoteInfo = "DTActionSheet Demo";
 		};
-		94D24BAF1D4AFF8100C7F33C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A785701C17FAA69D0080AB0A /* DTFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 384470EC1BA33ED80037C68D;
-			remoteInfo = "DTFoundation (tvOS)";
-		};
 		A72121CA1C328161007F7C10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A785701C17FAA69D0080AB0A /* DTFoundation.xcodeproj */;
@@ -709,27 +707,6 @@
 			remoteGlobalIDString = A7EA07391A2B215200B61CCE;
 			remoteInfo = "DTFoundation (OSX)";
 		};
-		A79BA8461B46E5710086C2F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A785701C17FAA69D0080AB0A /* DTFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A7EA07381A2B215200B61CCE;
-			remoteInfo = "DTFoundation (OSX)";
-		};
-		A79C304E1B60F27C00E5491A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A785701C17FAA69D0080AB0A /* DTFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A7EA07B71A2B2F6A00B61CCE;
-			remoteInfo = "DTFoundation (iOS)";
-		};
-		A7D29D631CB68D2A0068F043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A785701C17FAA69D0080AB0A /* DTFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A7EA07B71A2B2F6A00B61CCE;
-			remoteInfo = "DTFoundation (iOS)";
-		};
 		A7D29D681CB68D470068F043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -781,6 +758,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				62CDE7692A3750E4003480D0 /* DTFoundation.xcframework in Embed Frameworks */,
 				A7D29D671CB68D470068F043 /* DTCoreText.framework in Embed Frameworks */,
 				A7D29D621CB68D2A0068F043 /* DTFoundation.framework in Embed Frameworks */,
 			);
@@ -802,6 +780,7 @@
 		5AF0E4D86A6BE8FC798F9702 /* AutoLayoutDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutDemoViewController.xib; sourceTree = "<group>"; };
 		5AF0E4DB1FBCBA1C165C0959 /* AutoLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutDemoViewController.m; sourceTree = "<group>"; };
 		5AF0E909A170F1B0FF3CCC47 /* AutoLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutDemoViewController.h; sourceTree = "<group>"; };
+		62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DTFoundation.xcframework; path = Carthage/Build/DTFoundation.xcframework; sourceTree = "<group>"; };
 		944A9E6318B5A7F000E41481 /* DTCSSListStyleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCSSListStyleTest.m; sourceTree = "<group>"; };
 		948723B11D4B130000274167 /* DemoWebVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWebVideoView.h; sourceTree = "<group>"; };
 		948723B21D4B130000274167 /* DemoWebVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWebVideoView.m; sourceTree = "<group>"; };
@@ -1098,6 +1077,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				A7D29D611CB68D2A0068F043 /* DTFoundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				62CDE7682A3750E4003480D0 /* DTFoundation.xcframework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				A73BC42912DA014300F064C6 /* CoreText.framework in Frameworks */,
 				A76E5B4912DD9AF500711782 /* QuartzCore.framework in Frameworks */,
@@ -1111,6 +1091,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D24B4A1D4AFE7800C7F33C /* QuartzCore.framework in Frameworks */,
+				62F5DF292A4379BD0006CBEC /* DTFoundation.xcframework in Frameworks */,
 				94D24B4B1D4AFE7800C7F33C /* CoreGraphics.framework in Frameworks */,
 				94D24B4C1D4AFE7800C7F33C /* UIKit.framework in Frameworks */,
 				94D24B4D1D4AFE7800C7F33C /* ImageIO.framework in Frameworks */,
@@ -1154,6 +1135,7 @@
 				A74A7AA71B6171FC004163BE /* ImageIO.framework in Frameworks */,
 				A74A7AA51B6171F7004163BE /* CoreText.framework in Frameworks */,
 				A766D65A1B610E4B00394D48 /* DTFoundation.framework in Frameworks */,
+				62CDE7652A3750BD003480D0 /* DTFoundation.xcframework in Frameworks */,
 				A79BA6C51B46A3AA0086C2F6 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1167,6 +1149,7 @@
 				A79BA8431B46E55D0086C2F6 /* DTFoundation.framework in Frameworks */,
 				E2262DC71638331500BFDAD7 /* Cocoa.framework in Frameworks */,
 				E2262E031638346200BFDAD7 /* AppKit.framework in Frameworks */,
+				62F5DF262A4379B60006CBEC /* DTFoundation.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,6 +1189,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62CDE7642A3750BD003480D0 /* DTFoundation.xcframework */,
 				A7FC5D34282AF11200A62031 /* libxml2.tbd */,
 				A77B76382535FDF20046FC0F /* CoreServices.framework */,
 				A77B763A2535FDFB0046FC0F /* CoreServices.framework */,
@@ -1937,7 +1921,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7D29D641CB68D2A0068F043 /* PBXTargetDependency */,
 				A7D29D691CB68D470068F043 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
@@ -1957,7 +1940,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				94D24BB01D4AFF8100C7F33C /* PBXTargetDependency */,
 			);
 			name = "DTCoreText (tvOS)";
 			productName = DTCoreText;
@@ -2011,7 +1993,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A79C304F1B60F27C00E5491A /* PBXTargetDependency */,
 			);
 			name = "DTCoreText (iOS)";
 			productName = DTCoreText;
@@ -2030,7 +2011,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A79BA8471B46E5710086C2F6 /* PBXTargetDependency */,
 			);
 			name = "DTCoreText (Mac)";
 			productName = DTCoreText;
@@ -2679,26 +2659,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		94D24BB01D4AFF8100C7F33C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DTFoundation (tvOS)";
-			targetProxy = 94D24BAF1D4AFF8100C7F33C /* PBXContainerItemProxy */;
-		};
-		A79BA8471B46E5710086C2F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DTFoundation (OSX)";
-			targetProxy = A79BA8461B46E5710086C2F6 /* PBXContainerItemProxy */;
-		};
-		A79C304F1B60F27C00E5491A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DTFoundation (iOS)";
-			targetProxy = A79C304E1B60F27C00E5491A /* PBXContainerItemProxy */;
-		};
-		A7D29D641CB68D2A0068F043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DTFoundation (iOS)";
-			targetProxy = A7D29D631CB68D2A0068F043 /* PBXContainerItemProxy */;
-		};
 		A7D29D691CB68D470068F043 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A79BA61F1B46A1FB0086C2F6 /* DTCoreText (iOS) */;
@@ -2722,7 +2682,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Demo/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText.demo;
 				PRODUCT_NAME = RTDemoApp;
@@ -2740,7 +2703,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Demo/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText.demo;
 				PRODUCT_NAME = RTDemoApp;
@@ -2790,10 +2756,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText;
 				PRODUCT_NAME = DTCoreText;
 				SDKROOT = appletvos;
@@ -2836,10 +2805,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText;
 				PRODUCT_NAME = DTCoreText;
 				SDKROOT = appletvos;
@@ -2883,12 +2855,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
-					"-fembed-bitcode",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText;
 				PRODUCT_NAME = DTCoreText;
@@ -3009,7 +2984,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Test/MacUnitTest-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
@@ -3052,7 +3031,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Test/MacUnitTest-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
@@ -3095,7 +3078,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Test/MacUnitTest-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
@@ -3143,11 +3130,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fembed-bitcode";
-				OTHER_LDFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = DTCoreText;
 				SDKROOT = iphoneos;
@@ -3191,11 +3180,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-fembed-bitcode";
-				OTHER_LDFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = DTCoreText;
 				SDKROOT = iphoneos;
@@ -3240,14 +3231,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Core/DTCoreText-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
-					"-fembed-bitcode",
 				);
-				OTHER_LDFLAGS = "-fembed-bitcode";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = DTCoreText;
 				SDKROOT = iphoneos;
@@ -3263,7 +3256,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -3285,8 +3277,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.6.26;
-				ENABLE_BITCODE = YES;
+				CURRENT_PROJECT_VERSION = 1.6.27;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -3306,11 +3297,13 @@
 					"${TARGET_BUILD_DIR}/**",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_CFLAGS = "-fembed-bitcode";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Core/Source\"",
+					"\"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**",
+				);
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Coverage;
@@ -3325,7 +3318,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Demo/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTCoreText.demo;
 				PRODUCT_NAME = RTDemoApp;
@@ -3411,7 +3407,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -3433,8 +3428,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.6.26;
-				ENABLE_BITCODE = YES;
+				CURRENT_PROJECT_VERSION = 1.6.27;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -3459,12 +3453,14 @@
 					"${TARGET_BUILD_DIR}/**",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-fembed-bitcode";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Core/Source\"",
+					"\"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**",
+				);
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -3473,7 +3469,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -3495,8 +3490,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.6.26;
-				ENABLE_BITCODE = YES;
+				CURRENT_PROJECT_VERSION = 1.6.27;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -3516,14 +3510,16 @@
 					"${TARGET_BUILD_DIR}/**",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
-					"-fembed-bitcode",
 				);
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Core/Source\" \"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Core/Source\"",
+					"\"$(SRCROOT)/Externals/DTFoundation/Core/Source\"/**",
+				);
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
